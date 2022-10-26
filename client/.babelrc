@@ -1,0 +1,27 @@
+{
+  "plugins": [
+    [
+      "module-resolver", {
+        "root": ["."]
+      }
+    ]
+  ],
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": [
+            "last 2 Chrome versions",
+            "last 2 Firefox versions",
+            "last 2 Safari versions",
+            "last 2 iOs versions",
+            "last 2 Android versions",
+            "last 2 ChromeAndroid versions"
+          ]
+        }
+      }
+    ],
+    "@babel/preset-react"
+  ]
+}
